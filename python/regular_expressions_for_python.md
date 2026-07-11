@@ -186,19 +186,6 @@ print(re.match(phone_pattern, "12345"))  # ❌ Invalid
 - Use online tools like [Regex101](https://regex101.com/) to test and debug regex patterns.
 - Break complex patterns into smaller, manageable parts.
 
----
-
-## 📊 Regex Cheat Sheet
-![Regex Cheat Sheet](https://i.imgur.com/OQStwMn.png)
-Credit: *https://i.imgur.com/OQStwMn.png*
-
----
-
-
-## 🎯 Conclusion 
-
-Regular expressions are a versatile and powerful tool for text processing. By mastering the syntax and applying best practices, you can efficiently solve a wide range of string manipulation tasks. Start with simple patterns, gradually build complexity, and always test your regex against real-world data.
-
 **Next Steps:**
 - Practice with real-world datasets.
 - Explore regex in other programming languages (e.g., JavaScript, Perl).
