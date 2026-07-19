@@ -67,8 +67,8 @@ echo
 
 printf '%s\n' "${fruits[@]}" > "$TMPFILE"
 echo "Wrote fruits to $TMPFILE"
-echo "Sorted fruits with process substitution:"
-diff <(sort "$TMPFILE") <(printf '%s\n' "${fruits[@]}" | sort) >/dev/null && echo "sorted output verified"
+echo "Raw vs sorted fruits with process substitution:"
+paste <(cat "$TMPFILE") <(sort "$TMPFILE")
 echo
 
 echo "Pipeline demo:"
