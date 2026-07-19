@@ -1,22 +1,26 @@
 # C Functions
 
-Function patterns, signatures, and common built-ins.
+Function patterns and common C standard-library calls.
 
 | Function Pattern | Description |
 | --- | --- |
 | Named function | Reusable unit with a stable name |
-| Anonymous/lambda function | Inline function for small logic |
-| Variadic/rest function | Accepts variable argument count |
-| Higher-order function | Receives or returns functions |
+| Variadic function | Uses `...` with `stdarg.h` (`printf`, etc.) |
+| Function pointer callback | Pass behavior to another function |
+| Dispatcher function | Routes work based on flags/types |
 
-| Built-in / Common Function | Purpose |
+| Common C Function | Purpose |
 | --- | --- |
-| print/log | Output values for debugging |
-| format/string interpolation | Build readable messages |
-| error/exception handling helper | Propagate and handle failures |
+| `printf` / `fprintf` | Formatted output |
+| `snprintf` | Safe formatted string write with size limit |
+| `qsort` | Generic array sort with comparator callback |
+| `bsearch` | Binary search with comparator callback |
+| `perror` | Print readable error message from `errno` |
 
 ## Example
 
-```text
-transform(data, fn)
+```c
+int add(int a, int b) {
+    return a + b;
+}
 ```

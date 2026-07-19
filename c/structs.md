@@ -1,16 +1,19 @@
 # C Structs
 
-Structs model and common member patterns.
+How C structs model data and composition.
 
 | Concept | Description | Example |
 | --- | --- | --- |
-| Field/Property | Stores state | `name`, `count` |
-| Method | Behavior attached to type/object | `save()`, `toString()` |
-| Constructor/Initializer | Creates new value | `new Type(...)` or equivalent |
-| Composition | Build larger types from smaller ones | embedded members |
+| Field | Stores state in a record | `name`, `count` |
+| Initializer | Assigns initial values | `(Point){.x = 1, .y = 2}` |
+| Function pointer field | Associates behavior via callback | `int (*cmp)(const void*, const void*)` |
+| Nested struct | Composes larger records | `struct Address` inside `struct User` |
 
 ## Example
 
-```text
-Type { field, method }
+```c
+struct Point {
+    int x;
+    int y;
+};
 ```
