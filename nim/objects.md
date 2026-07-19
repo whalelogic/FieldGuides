@@ -1,6 +1,6 @@
 # Nim Objects
 
-Objects model and common member patterns.
+This guide summarizes common member patterns for this language.
 
 | Concept | Description | Example |
 | --- | --- | --- |

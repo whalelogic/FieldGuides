@@ -1,6 +1,6 @@
 # Zig Structs
 
-Structs model data and common member patterns.
+This guide summarizes common member patterns for this language.
 
 | Concept | Description | Example |
 | --- | --- | --- |
